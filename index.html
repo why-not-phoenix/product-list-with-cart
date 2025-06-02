@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- External font links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+  <lin2 rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- Local Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+</head>
+<body class="bg-rose-100">
+  <header></header>
+
+  <main class="container d-grid">
+
+    <!-- Menu -->
+    <section class="menu d-grid">
+      
+      <!-- Menu Header -->
+      <h1 class="menu-head fs-5 fw-3 text-rose-900">Desserts</h1>
+
+      <!-- Menu List -->
+       
+      <!-- Waffle -->
+      <div class="menu__item menu__item--waffle d-flex flex-col flex-col--left">
+
+        <div class="menu__item__header" aria-selected="false">
+          <picture class="menu__item__image">
+            <source src="assets/images/image-waffle-desktop.jpg" type="jpg" media="(min-width: 1200px)">
+            <source src="assets/images/image-waffle-tablet.jpg" type="jpg" media="(min-width: 700px)">
+            <img src="assets/images/image-waffle-mobile.jpg" alt="Waffle">
+          </picture>
+
+          <button class="btn bg-rose-50 d-flex">
+            <img src="assets/images/icon-add-to-cart.svg" alt="add to cart">
+            <span class="fs-1 fw-2 text-rose-900">Add to Cart</span>
+          </button>
+        </div>
+
+        <div class="menu__item__text">
+          <h2 class="menu__item__head fs-1 fw-1 text-rose-500">Waffle</h2>
+          <p class="menu__item__name fs-2 fw-2 text-rose-900">Waffle with Berries</p>
+          <p class="menu__item__price fs-2 fw-2 text-red">$6.50</p>
+        </div>
+
+      </div>
+
+      <!-- Creme Brulee -->
+      <div class="menu__item menu__item--creme-brulee d-flex flex-col flex-col--left">
+
+        <div class="menu__item__header" aria-selected="false">
+          <picture class="menu__item__image">
+            <source src="assets/images/image-creme-brulee-desktop.jpg" type="jpg" media="(min-width: 1200px)">
+            <source src="assets/images/image-creme-brulee-tablet.jpg" type="jpg" media="(min-width: 700px)">
+            <img src="assets/images/image-creme-brulee-mobile.jpg" alt="Crème Brûlée">
+          </picture>
+
+          <button class="btn bg-rose-50 d-flex">
+            <img src="assets/images/icon-add-to-cart.svg" alt="add to cart">
+            <span class="fs-1 fw-2 text-rose-900">Add to Cart</span>
+          </button>
+        </div>
+
+        <div class="menu__item__text">
+          <h2 class="menu__item__head fs-1 fw-1 text-rose-500">Crème Brûlée</h2>
+          <p class="menu__item__name fs-2 fw-2 text-rose-900">Vanilla Bean Crème Brûlée</p>
+          <p class="menu__item__price fs-2 fw-2 text-red">$7.00</p>
+        </div>
+
+      </div>
+
+      <!-- Macaron -->
+      <div class="menu__item menu__item--macaron d-flex flex-col flex-col--left">
+
+        <div class="menu__item__header" aria-selected="false">
+          <picture class="menu__item__image">
+            <source src="assets/images/image-macaron-desktop.jpg" type="jpg" media="(min-width: 1200px)">
+            <source src="assets/images/image-macaron-tablet.jpg" type="jpg" media="(min-width: 700px)">
+            <img src="assets/images/image-macaron-mobile.jpg" alt="Macaron">
+          </picture>
+
+          <button class="btn bg-rose-50 d-flex">
+            <img src="assets/images/icon-add-to-cart.svg" alt="add to cart">
+            <span class="fs-1 fw-2 text-rose-900">Add to Cart</span>
+          </button>
+        </div>
+
+        <div class="menu__item__text">
+          <h2 class="menu__item__head fs-1 fw-1 text-rose-500">Macaron</h2>
+          <p class="menu__item__name fs-2 fw-2 text-rose-900">Macaron Mix of Five</p>
+          <p class="menu__item__price fs-2 fw-2 text-red">$8.00</p>
+        </div>
+
+      </div>
+
+      <!-- Tiramisu -->
+      <div class="menu__item menu__item--tiramisu d-flex flex-col flex-col--left">
+        
+        <div class="menu__item__header" aria-selected="false">
+          <picture class="menu__item__image">
+            <source src="assets/images/image-tiramisu-desktop.jpg" type="jpg" media="(min-width: 1200px)">
+            <source src="assets/images/image-tiramisu-tablet.jpg" type="jpg" media="(min-width: 700px)">
+            <img src="assets/images/image-tiramisu-mobile.jpg" alt="Tiramisu">
+          </picture>
+          <button class="btn bg-rose-50 d-flex">
+            <img src="assets/images/icon-add-to-cart.svg" alt="add to cart">
+            <span class="fs-1 fw-2 text-rose-900">Add to Cart</span>
+          </button>
+        </div>
+
+        <div class="menu__item__text">
+          <h2 class="menu__item__head fs-1 fw-1 text-rose-500">Tiramisu</h2>
+          <p class="menu__item__name fs-2 fw-2 text-rose-900">Classic Tiramisu</p>
+          <p class="menu__item__price fs-2 fw-2 text-red">$5.50</p>
+        </div>
+
+      </div>
+
+      <!-- Baklava -->
+      <div class="menu__item menu__item--baklava d-flex flex-col flex-col--left">
+
+        <div class="menu__item__header" aria-selected="false">
+          <picture class="menu__item__image">
+            <source src="assets/images/image-baklava-desktop.jpg" type="jpg" media="(min-width: 1200px)">
+            <source src="assets/images/image-baklava-tablet.jpg" type="jpg" media="(min-width: 700px)">
+            <img src="assets/images/image-baklava-mobile.jpg" alt="Baklava">
+          </picture>
+          <button class="btn bg-rose-50 d-flex">
+            <img src="assets/images/icon-add-to-cart.svg" alt="add to cart">
+            <span class="fs-1 fw-2 text-rose-900">Add to Cart</span>
+          </button>
+        </div>
+
+        <div class="menu__item__text">
+          <h2 class="menu__item__head fs-1 fw-1 text-rose-500">Baklava</h2>
+          <p class="menu__item__name fs-2 fw-2 text-rose-900">Pistachio Baklava</p>
+          <p class="menu__item__price fs-2 fw-2 text-red">$4.00</p>
+        </div>
+
+      </div>
+
+      <!-- Meringue -->
+      <div class="menu__item menu__item--meringue d-flex flex-col flex-col--left">
+
+        <div class="menu__item__header" aria-selected="false">
+          <picture class="menu__item__image">
+            <source src="assets/images/image-meringue-desktop.jpg" type="jpg" media="(min-width: 1200px)">
+            <source src="assets/images/image-meringue-tablet.jpg" type="jpg" media="(min-width: 700px)">
+            <img src="assets/images/image-meringue-mobile.jpg" alt="Meringue Pie">
+          </picture>
+          <button class="btn bg-rose-50 d-flex">
+            <img src="assets/images/icon-add-to-cart.svg" alt="add to cart">
+            <span class="fs-1 fw-2 text-rose-900">Add to Cart</span>
+          </button>
+        </div>
+
+        <div class="menu__item__text">
+          <h2 class="menu__item__head fs-1 fw-1 text-rose-500">Pie</h2>
+          <p class="menu__item__name fs-2 fw-2 text-rose-900">Lemon Meringue Pie</p>
+          <p class="menu__item__price fs-2 fw-2 text-red">$5.00</p>
+        </div>
+
+      </div>
+
+      <!-- Cake -->
+      <div class="menu__item menu__item--cake d-flex flex-col flex-col--left">
+
+        <div class="menu__item__header" aria-selected="false">
+          <picture class="menu__item__image">
+            <source src="assets/images/image-cake-desktop.jpg" type="jpg" media="(min-width: 1200px)">
+            <source src="assets/images/image-cake-tablet.jpg" type="jpg" media="(min-width: 700px)">
+            <img src="assets/images/image-cake-mobile.jpg" alt="Cake">
+          </picture>
+          <button class="btn bg-rose-50 d-flex">
+            <img src="assets/images/icon-add-to-cart.svg" alt="add to cart">
+            <span class="fs-1 fw-2 text-rose-900">Add to Cart</span>
+          </button>
+        </div>
+
+        <div class="menu__item__text">
+          <h2 class="menu__item__head fs-1 fw-1 text-rose-500">Cake</h2>
+          <p class="menu__item__name fs-2 fw-2 text-rose-900">Red Velvet Cake</p>
+          <p class="menu__item__price fs-2 fw-2 text-red">$4.50</p>
+        </div>
+
+      </div>
+
+      <!-- Brownie -->
+      <div class="menu__item menu__item--brownie d-flex flex-col flex-col--left">
+
+        <div class="menu__item__header" aria-selected="false">
+          <picture class="menu__item__image">
+            <source src="assets/images/image-brownie-desktop.jpg" type="jpg" media="(min-width: 1200px)">
+            <source src="assets/images/image-brownie-tablet.jpg" type="jpg" media="(min-width: 700px)">
+            <img src="assets/images/image-brownie-mobile.jpg" alt="Brownie">
+          </picture>
+          <button class="btn bg-rose-50 d-flex">
+            <img src="assets/images/icon-add-to-cart.svg" alt="add to cart">
+            <span class="fs-1 fw-2 text-rose-900">Add to Cart</span>
+          </button>
+        </div>
+
+        <div class="menu__item__text">
+          <h2 class="menu__item__head fs-1 fw-1 text-rose-500">Brownie</h2>
+          <p class="menu__item__name fs-2 fw-2 text-rose-900">Salted Caramel Brownie</p>
+          <p class="menu__item__price fs-2 fw-2 text-red">$4.50</p>
+        </div>
+
+      </div>
+
+      <!-- Panna Cotta -->
+      <div class="menu__item menu__item--panna-cotta d-flex flex-col flex-col--left">
+
+        <div class="menu__item__header" aria-selected="false">
+          <picture class="menu__item__image">
+            <source src="assets/images/image-panna-cotta-desktop.jpg" type="jpg" media="(min-width: 1200px)">
+            <source src="assets/images/image-panna-cotta-tablet.jpg" type="jpg" media="(min-width: 700px)">
+            <img src="assets/images/image-panna-cotta-mobile.jpg" alt="Panna Cotta">
+          </picture>
+          <button class="btn bg-rose-50 d-flex">
+            <img src="assets/images/icon-add-to-cart.svg" alt="add to cart">
+            <span class="fs-1 fw-2 text-rose-900">Add to Cart</span>
+          </button>
+        </div>
+
+        <div class="menu__item__text">
+          <h2 class="menu__item__head fs-1 fw-1 text-rose-500">Panna Cotta</h2>
+          <p class="menu__item__name fs-2 fw-2 text-rose-900">Vanilla Panna Cotta</p>
+          <p class="menu__item__price fs-2 fw-2 text-red">$6.50</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Checkout section -->
+    <section class="checkout d-flex flex-col bg-rose-50">
+      <h2 id="checkout__head" class="fs-3 fw-3 text-red">Your Cart (<span></span>)</h2>
+      <div id="checkout__calc" aria-hidden="true" class="checkout__calc">
+        <ul class="checkout__list">
+        </ul>
+        <p class="checkout__total d-flex">
+          <span class="fs-1 text-rose-500">Order Total</span>
+          <span id="cart-total" class="fs-3 fw-3 text-rose-900"></span>
+        </p>
+        <div class="carbon-check d-flex bg-rose-100">
+          <img src="assets/images/icon-carbon-neutral.svg" alt="carbon neutral icon">
+          <p class="text-rose-900">This is a <span class="fw-2">carbon-neutral</span> delivery</p>
+        </div>
+        <button id="order-button" class="btn btn--confirm fs-1 fw-2">Confirm Order</button>
+      </div>
+      <div class="empty-cart d-flex flex-col" aria-hidden="false">
+        <img src="assets/images/illustration-empty-cart.svg" class="checkout__image" alt="empty cart">
+        <p class="checkout__text fs-1 fw-2 text-rose-500">Your added items will appear here</p>
+      </div>
+    </section>
+
+    <div id="order-modal" class="modal hidden">
+      <div class="modal-content">
+        <img src="assets/images/icon-order-confirmed.svg" alt="order confirmed icon">
+        <h2 class="modal-title fs-5 fw-3 text-rose-900">Order Confirmed</h2>
+        <p class="fs-1 fw-1 text-rose-500">We hope you enjoy your food!</p>
+        <ul id="order-summary-list"></ul>
+        <button id="new-order-btn" class="btn btn--confirm fs-1 fw-2">Start New Order</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="#">Dominion</a>.
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
